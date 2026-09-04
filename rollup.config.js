@@ -47,6 +47,7 @@ const pluginExternal = {
   '@leafer-in/scale-fixed': 'LeaferIN.scaleFixed',
   '@leafer-in/box': 'LeaferIN.box',
   '@leafer-in/corner': 'LeaferIN.corner',
+  '@leafer-in/bg-runner': 'LeaferIN.bgRunner',
 }
 
 const LeaferUIExternal = {
@@ -407,6 +408,14 @@ const platform = {
       name: 'corner',
       path: inPath + '/corner',
       withGlobal: 'LeaferIN.corner',
+      withMin: 'min',
+      withFormat: ['cjs'],
+      external: pluginExternal,
+    },
+    {
+      name: 'bg-runner',
+      path: inPath + '/bg-runner',
+      withGlobal: 'LeaferIN.bgRunner',
       withMin: 'min',
       withFormat: ['cjs'],
       external: pluginExternal,
